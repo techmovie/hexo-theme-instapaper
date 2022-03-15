@@ -1,0 +1,15 @@
+{
+  "compilerOptions": { 
+    "allowUnreachableCode": false,
+    "allowSyntheticDefaultImports": true,
+    "strict":true,
+    "noUnusedLocals": true,
+    "lib": ["ESNext","ES2021","DOM"],
+    "target": "ES6",
+    "moduleResolution": "node",
+    "resolveJsonModule":true,
+    "typeRoots": [
+      "./node_modules/@types",
+    ],
+  }
+}

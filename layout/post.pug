@@ -1,0 +1,27 @@
+section.post-page
+  .title-bar
+    h1 #{ page.title }
+    .post-info
+      span #{ time(page.date, 'YYYY-MM-DD HH:mm:ss') }
+      span.tags
+        each tag in page.tags.data
+          a(href=url_for(tag.path)) ##{ tag.name }
+  if page.featured_image
+    .feature-img
+      img(src=page.featured_image, alt='feature-img')
+  -
+    const filterImgContent = page.content.replace(/<img(\s*)src="(.*?)"(.*?)>/ig,function(article,p1,p2){
+      return article.replace(p2, `data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" 
+      class="img-loading" data-original="${p2}"`);
+    })
+  article !{ filterImgContent }
+  if theme.copyright.enable
+    include ./partial/copyright.pug
+  .post-pager
+    .prev
+      if page.prev
+        a(href=url_for(page.prev.path), title=page.prev.title) 上一篇 #{ page.prev.title }
+    .next 
+      if page.next
+        a(href=url_for(page.next.path), title=page.next.title) 下一篇 #{ page.next.title }
+  include ./partial/comment.pug

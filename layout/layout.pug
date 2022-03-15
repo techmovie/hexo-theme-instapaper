@@ -1,0 +1,11 @@
+doctype
+html(lang=config.language)
+  include ./partial/header-base.pug
+  body
+    include ./partial/header.pug
+    main
+      section.main-content !{ body }
+    include ./partial/footer.pug
+    script(src=url_for('scripts/dark.js'))
+    if is_post()
+      script(src=url_for('scripts/post.js'))

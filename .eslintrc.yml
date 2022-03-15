@@ -1,0 +1,19 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - standard
+parser: '@typescript-eslint/parser'
+root: true
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module
+plugins:
+  - '@typescript-eslint'
+rules:
+  {
+    semi: ['error', 'always'],
+    comma-dangle: ['error', 'always-multiline'],
+    indent: off,
+    '@typescript-eslint/indent': ['error', 2],
+  }

@@ -1,0 +1,14 @@
+if theme.comment.gitalk.enable
+  link(rel='stylesheet', href='https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css')
+  script(src='https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js')
+  #gitalk-container
+  script.
+    new Gitalk({
+      clientID: '#{theme.comment.gitalk.ClientID}',
+      clientSecret: '#{theme.comment.gitalk.ClientSecret}',
+      repo: '#{theme.comment.gitalk.repo}',
+      owner: '#{theme.comment.gitalk.owner}',
+      admin: '#{theme.comment.gitalk.admin}',
+      id: location.pathname.substr(0, 48),
+      distractionFreeMode: true,
+    }).render('gitalk-container');

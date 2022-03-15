@@ -1,0 +1,23 @@
+comment:
+  gitalk:
+    enable: true
+    owner: 
+    admin: 
+    repo: 
+    ClientID: 
+    ClientSecret: 
+    labels: 'gitalk'
+    distractionFreeMode: true
+socialList:
+  - name: telegram
+    url: 
+  - name: github
+    url: 
+  - name: mail
+    url: 
+highlight:
+  light: https://cdn.staticfile.org/highlight.js/11.5.0/styles/default.min.css
+  dark: https://cdn.staticfile.org/highlight.js/11.5.0/styles/tokyo-night-dark.min.css
+copyright:
+  enable: true
+  license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'

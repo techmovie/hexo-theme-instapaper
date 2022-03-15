@@ -1,0 +1,54 @@
+.page-header {
+  padding: 20px;
+  font-size: 17px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  width: 100vw;
+  box-sizing: border-box;
+  nav {
+    position: relative;
+  }
+  .router-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .nav-item {
+    margin: 17px;
+    font-weight: 600;
+    a {
+      transition: all 0.35s ease-in-out;
+    }
+  }
+  .mode-switch {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    .iconfont {
+      font-size: 22px;
+      cursor: pointer;
+    }
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    li {
+      height: 30px;
+      line-height: 30px;
+      margin: 0 10px;
+    }
+    span {
+      font-size: 24px;
+      transition: all 0.35s ease-in-out;
+    }
+    .icon-github {
+      font-size: 26px;
+    }
+    .icon-mail {
+      font-size: 26px;
+    }
+  }
+}

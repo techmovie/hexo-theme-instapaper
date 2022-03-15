@@ -1,0 +1,101 @@
+.post-page {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 60px;
+  .title-bar {
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    color: var(--text-title-color);
+  }
+  .feature-img {
+    img {
+      max-width: 100%;
+    }
+  }
+  p {
+    color: var(--article-text-color);
+    font-size: 18px;
+  }
+  .img-caption {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+  .post-info {
+    color: var(--post-info-color);
+    display: flex;
+    align-items: center;
+    .tags {
+      display: inline-block;
+      margin-left: 6px;
+      a {
+        margin: 0 3px;
+        color: var(--post-info-color);
+        &:hover,
+        &:active {
+          color: var(--link-active-color);
+        }
+      }
+    }
+  }
+  img {
+    max-width: 90%;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 6px;
+    &.img-loading {
+      height: 200px;
+      width: 90%;
+      background-color: var(--img-bg-color);
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+  .post-pager {
+    border-top: 1px dashed #ececec;
+    border-color: var(--border-color);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      flex-basis: 48%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    a {
+      color: var(--post-link-color);
+      &:hover,
+      &:active {
+        color: var(--link-active-color);
+      }
+    }
+  }
+  .copyright-wrapper {
+    border-top: 1px dashed #ececec;
+    border-color: var(--border-color);
+    padding: 10px 0;
+    p {
+      margin: 7px 0;
+      font-size: 14px;
+    }
+    a {
+      color: var(--post-link-color);
+      border-bottom: 1px dashed #ececec;
+      border-color: var(--border-color);
+      &:hover,
+      &:active {
+        color: var(--link-active-color);
+      }
+    }
+  }
+}

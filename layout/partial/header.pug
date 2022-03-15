@@ -1,0 +1,17 @@
+header.page-header
+  nav
+    ul.router-list
+      li.nav-item 
+        a(href='/') 主页
+      li.nav-item 
+        a(href='/archives/') 归档
+      li.nav-item 
+        a(href='/atom.xml') RSS
+    .mode-switch
+      span.iconfont.icon-DarkTheme
+  if is_home() || is_archive() || is_tag()
+    ul.social-list
+      each social in theme.socialList
+        li.social-item
+          a(href=social.url)
+            span(class=['iconfont', `icon-${social.name}`])

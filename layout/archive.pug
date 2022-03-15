@@ -1,0 +1,12 @@
+.archive-page
+  - let prevYear = -1;let curYear = 0;
+  each post in site.posts.sort('date', -1).data
+    -
+      prevYear = curYear;
+      curYear = time(post.date, 'YYYY');
+    if curYear !== prevYear
+      h2 #{ curYear }
+    .article-info
+      .date #{ time(post.date, 'YYYY-MM-DD') }
+      .title
+        a(href=url_for(post.path)) #{ post.title }

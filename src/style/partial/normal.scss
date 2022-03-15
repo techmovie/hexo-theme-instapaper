@@ -1,0 +1,186 @@
+@import '_variables';
+* {
+  font-family: 'Noto Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+}
+body {
+  --text-color: #{$textColor};
+  --text-title-color: #{$textTitleColor};
+  --bkg-color: #{$backgroundColor};
+  --link-color: #{$linkColor};
+  --link-active-color: #{$linkActiveColor};
+  --text-second-color: #{$textSecondColor};
+  --border-color: #{$borderColor};
+  --article-text-color: #{$articleTextColor};
+  --textarea-color: #{$textareaBgColor};
+  --comment-primary-color: #{$commentPrimaryColor};
+  --comment-border-color: #{$commentBorderColor};
+  --popup-bg-color: #{$popupBgColor};
+
+  --comment-btn-bg-color: #{$commentBtnBgColor};
+  --comment-btn-border-color: #{$commentBtnBorderColor};
+  --comment-btn-color: #{$commentBtnColor};
+
+  --comment-primary-btn-bg-color: #{$commentPrimaryBtnBgColor};
+  --comment-primary-btn-border-color: #{$commentPrimaryBtnBorderColor};
+  --comment-primary-btn-color: #{$commentPrimaryBtnColor};
+
+  --post-info-color: #{$infoColor};
+  --switch-bg-color: #{$switchBgColor};
+  --img-bg-color: #{$imgBgColor};
+}
+
+body.dark-mode {
+  --text-color: #{$textColorDark};
+  --text-title-color: #{$textTitleDark};
+  --bkg-color: #{$backgroundColorDark};
+  --link-color: #{$linkColorDark};
+  --link-active-color: #{$linkActiveColorDark};
+  --text-second-color: #{$textSecondColorDark};
+  --border-color: #{$borderColorDark};
+  --article-text-color: #{$textColorDark};
+  --textarea-bg-color: #{$textareaBgDark};
+  --post-link-color: #{$postLinkColor};
+  --post-link-color: #{$postLinkDark};
+
+  --comment-primary-color: #{$commentPrimaryDark};
+  --comment-border-color: #{$commentBorderDark};
+  --popup-bg-color: #{$popupBgDark};
+
+  --comment-btn-bg-color: #{$commentBtnBgDark};
+  --comment-btn-border-color: #{$commentBtnBorderDark};
+  --comment-btn-color: #{$commentBtnDark};
+
+  --comment-primary-btn-bg-color: #{$commentPrimaryBtnBgDark};
+  --comment-primary-btn-border-color: #{$commentPrimaryBtnBorderDark};
+  --comment-primary-btn-color: #{$commentPrimaryBtnDark};
+
+  --post-info-color: #{$infoDark};
+  --switch-bg-color: #{$switchBgDark};
+
+  --img-bg-color: #{$imgBgDark};
+
+  img,
+  code.hljs {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: #{$textColorDark};
+    --text-title-color: #{$textTitleDark};
+    --bkg-color: #{$backgroundColorDark};
+    --link-color: #{$linkColorDark};
+    --link-active-color: #{$linkActiveColorDark};
+    --text-second-color: #{$textSecondColorDark};
+    --border-color: #{$borderColorDark};
+    --article-text-color: #{$textColorDark};
+    --textarea-bg-color: #{$textareaBgDark};
+    --post-link-color: #{$postLinkColor};
+    --post-link-color: #{$postLinkDark};
+
+    --comment-primary-color: #{$commentPrimaryDark};
+    --comment-border-color: #{$commentBorderDark};
+    --popup-bg-color: #{$popupBgDark};
+
+    --comment-btn-bg-color: #{$commentBtnBgDark};
+    --comment-btn-border-color: #{$commentBtnBorderDark};
+    --comment-btn-color: #{$commentBtnDark};
+
+    --comment-primary-btn-bg-color: #{$commentPrimaryBtnBgDark};
+    --comment-primary-btn-border-color: #{$commentPrimaryBtnBorderDark};
+    --comment-primary-btn-color: #{$commentPrimaryBtnDark};
+
+    --post-info-color: #{$infoDark};
+    --switch-bg-color: #{$switchBgDark};
+
+    --img-bg-color: #{$imgBgDark};
+    img,
+    code.hljs {
+      filter: brightness(0.8) contrast(1.2);
+    }
+  }
+  body.light-mode {
+    --text-color: #{$textColor};
+    --text-title-color: #{$textTitleColor};
+    --bkg-color: #{$backgroundColor};
+    --link-color: #{$linkColor};
+    --link-active-color: #{$linkActiveColor};
+    --text-second-color: #{$textSecondColor};
+    --border-color: #{$borderColor};
+    --article-text-color: #{$articleTextColor};
+    --textarea-bg-color: #{$textareaBgColor};
+    --post-link-color: #{$postLinkColor};
+
+    --comment-primary-color: #{$commentPrimaryColor};
+    --comment-border-color: #{$commentBorderColor};
+    --popup-bg-color: #{$popupBgColor};
+
+    --comment-btn-bg-color: #{$commentBtnBgColor};
+    --comment-btn-border-color: #{$commentBtnBorderColor};
+    --comment-btn-color: #{$commentPrimaryBtnColor};
+
+    --comment-primary-btn-bg-color: #{$commentPrimaryBtnBgColor};
+    --comment-primary-btn-border-color: #{$commentPrimaryBtnBorderColor};
+    --comment-primary-btn-color: #{$commentPrimaryBtnColor};
+
+    --post-info-color: #{$infoColor};
+    --switch-bg-color: #{$switchBgColor};
+
+    --img-bg-color: #{$imgBgColor};
+
+    img {
+      filter: null;
+    }
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+h2 {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 14px;
+}
+.main-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+body {
+  font-size: $textSize;
+  background-color: var(--bkg-color);
+  color: var(--text-color);
+}
+a {
+  color: var(--link-color);
+  &:hover,
+  &:active {
+    color: var(--link-active-color);
+  }
+}
+p {
+  margin: 27px 0;
+  line-height: 30px;
+}

@@ -1,0 +1,55 @@
+#gitalk-container {
+  color: var(--article-text-color);
+  .gt-meta {
+    border-color: var(--border-color);
+  }
+  textarea {
+    background-color: var(--textarea-bg-color);
+    color: var(--article-text-color);
+  }
+  .gt-btn {
+    background-color: var(--comment-btn-bg-color);
+    border-color: var(--comment-btn-border-color);
+    color: var(--comment-btn-color);
+    &-public,
+    &-login {
+      border-color: var(--comment-primary-btn-border-color);
+      color: var(--comment-primary-btn-color);
+      background-color: var(--comment-primary-btn-bg-color);
+    }
+  }
+  .gt-container.gt-input-focused:after {
+    background: transparent !important;
+  }
+  .gt-comment-content {
+    background-color: var(--textarea-bg-color);
+  }
+  .gt-comment-content:hover {
+    box-shadow: none;
+  }
+  .gt-link,
+  .gt-comment-username,
+  .gt-ico-text,
+  .user-mention {
+    color: var(--comment-primary-color);
+  }
+  .gt-svg svg {
+    fill: var(--comment-primary-color);
+  }
+  blockquote {
+    border-color: var(--comment-border-color);
+  }
+  .gt-popup {
+    background-color: var(--popup-bg-color);
+    border-color: var(--border-color);
+    a {
+      color: var(--comment-primary-color);
+    }
+  }
+  .gt-container a.is--active {
+    color: var(--article-text-color);
+  }
+  .gt-container .gt-copyright {
+    border-color: var(--border-color);
+  }
+}
