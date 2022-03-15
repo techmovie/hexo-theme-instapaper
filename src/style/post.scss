@@ -59,6 +59,22 @@
       background-repeat: no-repeat;
     }
   }
+  .video-container{
+    height: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+    iframe, object, embed {
+      height: 100%;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
   .post-pager {
     border-top: 1px dashed #ececec;
     border-color: var(--border-color);

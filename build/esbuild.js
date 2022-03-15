@@ -8,7 +8,6 @@ import browserSync from 'browser-sync';
 
 const cmd = process.argv.slice(2)[0];
 const isDev = cmd === 'dev';
-const isProd = cmd === 'build';
 let bs = null;
 if (isDev) {
   bs = browserSync.create();
@@ -37,7 +36,7 @@ if (isDev) {
         },
       }
       : false,
-    minify: isProd,
+    minify: true,
     plugins: [
       sassPlugin({
         async transform (source, resolveDir) {

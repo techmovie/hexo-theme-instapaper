@@ -1,5 +1,6 @@
 section.post-page
   .title-bar
+    - console.log(page.photos);
     h1 #{ page.title }
     .post-info
       span #{ time(page.date, 'YYYY-MM-DD HH:mm:ss') }
@@ -14,7 +15,12 @@ section.post-page
       return article.replace(p2, `data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" 
       class="img-loading" data-original="${p2}"`);
     })
-  article !{ filterImgContent }
+  article 
+    if page.photos && page.photos.length
+      .post-gallery
+        each photo in page.photos
+          img(src=url_for(photo))
+    .content !{ filterImgContent }
   if theme.copyright.enable
     include ./partial/copyright.pug
   .post-pager
