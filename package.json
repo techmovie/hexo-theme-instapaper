@@ -39,7 +39,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.2.0",
-    "execa": "^6.1.0",
+    "execa": "^5.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
     "ora": "^6.1.0",
@@ -55,7 +55,7 @@
     "postcss-preset-env": "^7.4.2"
   },
   "lint-staged": {
-    "src/**/*.{ts}": "eslint --max-warnings 0",
+    "src/**/*.ts": "eslint --max-warnings 0",
     "*.{md,yaml,yml,pug}": [
       "prettier --write"
     ]
