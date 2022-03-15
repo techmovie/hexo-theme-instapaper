@@ -14,6 +14,7 @@
 ## TODO
 
 - 支持移动端
+- 支持多语言
 
 ## 安装主题
 
@@ -27,7 +28,7 @@ git clone git@github.com:techmovie/hexo-theme-instapaper.git themes/instapaper -
 
 ## 主题配置
 
-将本主题目录下的的`_config.yaml.sample`改为`_config.yaml`，按以下提示进行配置
+将本主题目录下的的`_config.yaml`按以下提示进行配置
 
 ```
 comment:

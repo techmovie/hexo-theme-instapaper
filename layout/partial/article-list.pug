@@ -5,4 +5,5 @@ ul.article-list
         a.article-title(href=url_for(_post.path), title=_post.title) #{ _post.title }
       .article-preview #{ _post.intro?_post.intro:truncate(strip_html(_post.content),{length: 100,omission:'...'}) }
       .article-time #{ time(_post.date, 'YYYY-MM-DD') }
-      .img-wrapper(style=`background-image: url(${_post.featured_image})`)
+      if _post.featured_image
+        .img-wrapper(style=`background-image: url(${_post.featured_image})`)
