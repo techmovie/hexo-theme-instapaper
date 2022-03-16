@@ -4,4 +4,8 @@ footer.footer-page {
   display: flex;
   align-items: center;
   justify-content: center;
+  a {
+    display: inline-block;
+    margin-left: 5px;
+  }
 }
