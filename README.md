@@ -56,3 +56,13 @@ copyright: // 版权声明
   license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
 
 ```
+
+本主题支持 highlightjs ，由于引用了 highlightjs 的主题，所以在博客根目录的 `_config.yaml` 中要按如下配置
+
+```
+highlight:
+  enable: true
+  line_number: false
+  wrap: false
+  hljs: true
+```
