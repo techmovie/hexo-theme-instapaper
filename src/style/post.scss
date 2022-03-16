@@ -59,14 +59,16 @@
       background-repeat: no-repeat;
     }
   }
-  .video-container{
+  .video-container {
     height: 0;
     margin-bottom: 20px;
     overflow: hidden;
     padding-top: 75%;
     position: relative;
     width: 100%;
-    iframe, object, embed {
+    iframe,
+    object,
+    embed {
       height: 100%;
       left: 0;
       margin: 0;
@@ -113,5 +115,83 @@
         color: var(--link-active-color);
       }
     }
+  }
+  ul,
+  ol {
+    padding-left: 30px;
+    li {
+      list-style: initial;
+      line-height: 34px;
+    }
+  }
+  ol li {
+    list-style: auto;
+  }
+  dt,
+  dd {
+    line-height: 34px;
+  }
+  dd {
+    padding-left: 30px;
+  }
+  table {
+    border-collapse: collapse;
+    th,
+    td {
+      border: 1px solid #ddd;
+      border-color: var(--border-color);
+    }
+    th {
+      height: 32px;
+      vertical-align: middle;
+      padding: 6px;
+    }
+    td {
+      text-align: center;
+      vertical-align: center;
+      padding: 6px;
+    }
+  }
+  .highlight {
+    table {
+      border: 0;
+      margin: 0;
+      width: auto;
+    }
+    td {
+      text-align: left;
+      border: 0;
+      padding: 0;
+    }
+  }
+  blockquote {
+    border-left: 4px solid #ddd;
+    border-color: var(--border-color);
+    margin: 0;
+    padding: 0 15px;
+  }
+  .caption {
+    background-color: var(--caption-bg-color);
+    line-height: 30px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: var(--post-link-color);
+      &:hover,
+      &:active {
+        color: var(--link-active-color);
+      }
+    }
+  }
+  mark {
+    background: none;
+  }
+  strong,
+  cite {
+    color: var(--article-text-color);
+  }
+  cite {
+    margin-left: 10px;
   }
 }

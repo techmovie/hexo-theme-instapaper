@@ -9,4 +9,4 @@
     .article-info
       .date #{ time(post.date, 'YYYY-MM-DD') }
       .title
-        a(href=url_for(post.path)) #{ post.title }
+        a(href=url_for(post.path)) #{ post.title||'无标题' }

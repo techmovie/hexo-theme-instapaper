@@ -15,6 +15,7 @@ body {
   --comment-primary-color: #{$commentPrimaryColor};
   --comment-border-color: #{$commentBorderColor};
   --popup-bg-color: #{$popupBgColor};
+  --post-link-color: #{$postLinkColor};
 
   --comment-btn-bg-color: #{$commentBtnBgColor};
   --comment-btn-border-color: #{$commentBtnBorderColor};
@@ -27,6 +28,7 @@ body {
   --post-info-color: #{$infoColor};
   --switch-bg-color: #{$switchBgColor};
   --img-bg-color: #{$imgBgColor};
+  --caption-bg-color: #{$captionBgColor};
 }
 
 body.dark-mode {
@@ -39,7 +41,6 @@ body.dark-mode {
   --border-color: #{$borderColorDark};
   --article-text-color: #{$textColorDark};
   --textarea-bg-color: #{$textareaBgDark};
-  --post-link-color: #{$postLinkColor};
   --post-link-color: #{$postLinkDark};
 
   --comment-primary-color: #{$commentPrimaryDark};
@@ -58,6 +59,7 @@ body.dark-mode {
   --switch-bg-color: #{$switchBgDark};
 
   --img-bg-color: #{$imgBgDark};
+  --caption-bg-color: #{$captionBgDark};
 
   img,
   code.hljs {
@@ -75,7 +77,6 @@ body.dark-mode {
     --border-color: #{$borderColorDark};
     --article-text-color: #{$textColorDark};
     --textarea-bg-color: #{$textareaBgDark};
-    --post-link-color: #{$postLinkColor};
     --post-link-color: #{$postLinkDark};
 
     --comment-primary-color: #{$commentPrimaryDark};
@@ -94,6 +95,7 @@ body.dark-mode {
     --switch-bg-color: #{$switchBgDark};
 
     --img-bg-color: #{$imgBgDark};
+    --caption-bg-color: #{$captionBgDark};
     img,
     code.hljs {
       filter: brightness(0.8) contrast(1.2);
@@ -127,6 +129,7 @@ body.dark-mode {
     --switch-bg-color: #{$switchBgColor};
 
     --img-bg-color: #{$imgBgColor};
+    --caption-bg-color: #{$captionBgColor};
 
     img {
       filter: null;
