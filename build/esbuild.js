@@ -5,6 +5,7 @@ import postcss from 'postcss';
 import postcssPresetEnv from 'postcss-preset-env';
 import autoprefixer from 'autoprefixer';
 import browserSync from 'browser-sync';
+import pxtorem from 'postcss-pxtorem';
 
 const cmd = process.argv.slice(2)[0];
 const isDev = cmd === 'dev';
@@ -40,7 +41,14 @@ if (isDev) {
     plugins: [
       sassPlugin({
         async transform (source, resolveDir) {
-          const { css } = await postcss([autoprefixer, postcssPresetEnv({ stage: 0 })]).process(source);
+          const { css } = await postcss([
+            autoprefixer,
+            postcssPresetEnv({ stage: 0 }),
+            pxtorem({
+              rootValue: 16,
+              propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
+            }),
+          ]).process(source);
           return css;
         },
       }),

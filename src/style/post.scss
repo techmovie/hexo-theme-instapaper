@@ -1,6 +1,4 @@
 .post-page {
-  max-width: 800px;
-  margin: 0 auto;
   position: relative;
   padding-bottom: 60px;
   .title-bar {
@@ -204,7 +202,7 @@
   code {
     background-color: var(--code-bg-color);
     color: var(--code-color);
-    padding: 5px;
+    padding: 3px;
     line-height: 35px;
   }
   ::-webkit-scrollbar {
