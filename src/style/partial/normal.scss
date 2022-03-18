@@ -29,6 +29,8 @@ body {
   --switch-bg-color: #{$switchBgColor};
   --img-bg-color: #{$imgBgColor};
   --caption-bg-color: #{$captionBgColor};
+  --code-color: #{$codeColor};
+  --code-bg-color: #{$codeBgColor};
 }
 
 body.dark-mode {
@@ -57,13 +59,15 @@ body.dark-mode {
 
   --post-info-color: #{$infoDark};
   --switch-bg-color: #{$switchBgDark};
-
   --img-bg-color: #{$imgBgDark};
   --caption-bg-color: #{$captionBgDark};
+  --code-color: #{$codeDark};
+  --code-bg-color: #{$codeBgDark};
 
   img,
   code.hljs {
-    filter: brightness(0.8) contrast(1.2);
+    filter: brightness(0.9);
+    background-color: $codeBgDark;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -96,9 +100,12 @@ body.dark-mode {
 
     --img-bg-color: #{$imgBgDark};
     --caption-bg-color: #{$captionBgDark};
+    --code-color: #{$codeDark};
+    --code-bg-color: #{$codeBgDark};
     img,
     code.hljs {
-      filter: brightness(0.8) contrast(1.2);
+      filter: brightness(0.9);
+      background-color: $codeBgDark;
     }
   }
   body.light-mode {
@@ -130,6 +137,8 @@ body.dark-mode {
 
     --img-bg-color: #{$imgBgColor};
     --caption-bg-color: #{$captionBgColor};
+    --code-color: #{$codeColor};
+    --code-bg-color: #{$codeBgColor};
 
     img {
       filter: null;

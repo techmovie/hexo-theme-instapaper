@@ -98,6 +98,13 @@
       }
     }
   }
+  a {
+    color: var(--post-link-color);
+    &:hover,
+    &:active {
+      color: var(--link-active-color);
+    }
+  }
   .copyright-wrapper {
     border-top: 1px dashed #ececec;
     border-color: var(--border-color);
@@ -193,5 +200,14 @@
   }
   cite {
     margin-left: 10px;
+  }
+  code {
+    background-color: var(--code-bg-color);
+    color: var(--code-color);
+    padding: 5px;
+    line-height: 35px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
