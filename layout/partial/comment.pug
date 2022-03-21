@@ -11,4 +11,6 @@ if theme.comment.gitalk.enable
       admin: '#{theme.comment.gitalk.admin}',
       id: location.pathname.substr(0, 48),
       distractionFreeMode: true,
+      labels: ['Gitalk'],
+      title: '#{page.title}',
     }).render('gitalk-container');
