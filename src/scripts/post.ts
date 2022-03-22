@@ -1,4 +1,3 @@
-
 const options = {
   rootMargin: '0px',
   threshold: 0,

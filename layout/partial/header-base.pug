@@ -1,21 +1,21 @@
 head
-meta(charset='UTF-8')
-meta(http-equiv='X-UA-Compatible')
-meta(
-  name='viewport',
-  content='width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1; user-scalable=no;'
-)
-meta(name='renderer', content='webkit')
-meta(name='color-scheme', content='dark light')
-meta(name='author', content=config.author)
-meta(name='description', content=config.description)
-meta(
-  name='keywords',
-  content=page.keywords ? page.keywords : config.keywords ? config.keywords : ''
-)
-title #{ page.title || config.title }
-link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
-link(rel='stylesheet', href='//at.alicdn.com/t/font_3242539_utq6ykfq7z.css')
-link(rel='stylesheet', light-src=theme.highlight.light, dark-src=theme.highlight.dark)
-link(rel='stylesheet', href='https://fonts.font.im/css?family=Noto+Serif', as='font')
-link(href='/style/index.css', rel='stylesheet')
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible')
+  meta(
+    name='viewport',
+    content='width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1,user-scalable=no'
+  )
+  meta(name='renderer', content='webkit')
+  meta(name='color-scheme', content='dark light')
+  meta(name='author', content=config.author)
+  meta(name='description', content=config.description)
+  meta(
+    name='keywords',
+    content=page.keywords ? page.keywords : config.keywords ? config.keywords : ''
+  )
+  title #{ page.title || config.title }
+  link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
+  link(rel='stylesheet', href='//at.alicdn.com/t/font_3242539_utq6ykfq7z.css')
+  link(rel='stylesheet', light-src=theme.highlight.light, dark-src=theme.highlight.dark)
+  link(rel='stylesheet', href='https://fonts.font.im/css?family=Noto+Serif', as='font')
+  link(href='/style/index.css', rel='stylesheet')

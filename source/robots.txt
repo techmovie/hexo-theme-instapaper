@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Allow: /archives/
 Allow: /tags/
-Disallow: /js/
-Disallow: /style/
+Allow: /js/
+Allow: /style/
