@@ -11,7 +11,7 @@ head
   meta(name='description', content=config.description)
   meta(
     name='keywords',
-    content=page.keywords ? page.keywords : config.keywords ? config.keywords : ''
+    content=page.keywords ? page.keywords.join(', ') : config.keywords ? config.keywords : ''
   )
   title #{ page.title || config.title }
   link(rel='icon', type='image/x-icon', href='/images/favicon.ico')
