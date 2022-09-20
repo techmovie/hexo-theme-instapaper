@@ -87,6 +87,12 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
+      &.next {
+        text-align: right;
+      }
+      &.pre {
+        text-align: left;
+      }
     }
     a {
       color: var(--post-link-color);
@@ -207,5 +213,8 @@
   }
   ::-webkit-scrollbar {
     display: none;
+  }
+  iframe {
+    width: 100%;
   }
 }
