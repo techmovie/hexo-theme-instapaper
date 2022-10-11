@@ -3,9 +3,10 @@ section.post-page
     h1 #{ page.title }
     .post-info
       span #{ time(page.date, 'YYYY-MM-DD HH:mm:ss') }
-      span.tags
-        each tag in page.tags.data
-          a(href=url_for(tag.path)) ##{ tag.name }
+      if page.tags
+        span.tags
+          each tag in page.tags.data
+            a(href=url_for(tag.path)) ##{ tag.name }
   if page.featured_image
     .feature-img
       img(src=page.featured_image, alt='feature-img')
