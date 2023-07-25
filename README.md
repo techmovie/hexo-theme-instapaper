@@ -4,7 +4,7 @@
 
 ## 主题预览
 
-[Demo](https://techmovie.github.io/)
+[Demo](https://techmovie.xyz/)
 
 ## Feature
 
