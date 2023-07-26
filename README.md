@@ -21,7 +21,7 @@
 进入到自己的 Hexo 博客目录，在博客目录下拉取主题代码
 
 ```
-git clone git@github.com:techmovie/hexo-theme-instapaper.git themes/instapaper --depth=1
+git clone https://github.com/techmovie/hexo-theme-instapaper.git themes/instapaper --depth=1
 ```
 
 在 Hexo 目录的`_config.yml`中将`theme`的值改为`instapaper`
