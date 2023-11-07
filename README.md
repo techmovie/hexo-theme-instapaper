@@ -4,7 +4,7 @@
 
 ## 主题预览
 
-[Demo](https://techmovie.xyz/)
+[Demo](https://duyu.page)
 
 ## Feature
 
