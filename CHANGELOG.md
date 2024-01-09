@@ -1,3 +1,15 @@
+## [0.0.7](https://github.com/techmovie/hexo-theme-instapaper/compare/0.0.6...0.0.7) (2024-01-09)
+
+### Bug Fixes
+
+- load img ([cd885b6](https://github.com/techmovie/hexo-theme-instapaper/commit/cd885b68a5189a2cc2948cf5cddaf6b99ab7350e))
+- load img ([008f411](https://github.com/techmovie/hexo-theme-instapaper/commit/008f4118f6d03e7ee9a578b14b6833733bf340ee))
+- 修复 code 样式 ([9e3577d](https://github.com/techmovie/hexo-theme-instapaper/commit/9e3577df33188293dbee775e6bc60063bb0ee56d))
+
+### Features
+
+- update demo url ([b573c5c](https://github.com/techmovie/hexo-theme-instapaper/commit/b573c5c15a59a5769b6c526e06f4f3632838aec2))
+
 ## [0.0.6](https://github.com/techmovie/hexo-theme-instapaper/compare/0.0.3...0.0.6) (2023-10-30)
 
 ### Bug Fixes
