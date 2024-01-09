@@ -48,9 +48,9 @@ socialList:
     url: https://github.com/YOURNAME
   - name: mail
     url: mailto:YOURNAME@xx.com
-highlight: // highlight 主题文件地址
-  light: https://cdn.staticfile.org/highlight.js/11.5.0/styles/default.min.css
-  dark: https://cdn.staticfile.org/highlight.js/11.5.0/styles/tokyo-night-dark.min.css
+highlight: // highlight 主题文件地址 可以按自己的喜好自定义
+  light: https://cdn.staticfile.org/highlight.js/11.5.0/styles/github.min.css
+  dark: https://cdn.staticfile.org/highlight.js/11.5.0/styles/github-dark.min.css
 copyright: // 版权声明
   enable: true
   license: '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'

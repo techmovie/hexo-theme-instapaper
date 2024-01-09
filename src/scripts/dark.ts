@@ -9,7 +9,7 @@ if (currentTheme === 'dark') {
   highlightThemeLink?.setAttribute('href', '');
   document.body.classList.toggle('dark-mode');
   highlightThemeLink?.setAttribute('href', darkCss as string);
-} else if (currentTheme === 'light') {
+} else {
   document.body.classList.toggle('light-mode');
   highlightThemeLink?.setAttribute('href', lightCss as string);
 }
